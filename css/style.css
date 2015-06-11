@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 .titles {
   background: #000;
   color: white;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
+
 .titles h1 {
   background: #000;
   color: white;
@@ -13,19 +13,34 @@
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
 .tabs .tab-title>a {
   font-size: 30px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
-.tabs dd.active a, .tabs .tab-title.active a {
+
+.tabs dd.active a,
+.tabs .tab-title.active a {
   background-color: #e1e1e1;
   color: #222;
 }
+
 .tabs li:not(.active) a {
   color: #ccc;
   background: #fff;
 }
+
 .tabs li:not(.active) a:hover {
   color: #000;
+}
+
+@media only screen and (max-width: 40em) {
+  .tabs-content {
+    padding: 0 10px;
+  }
+  .tabs dd,
+  .tabs .tab-title {
+    width: 100%;
+  }
 }
