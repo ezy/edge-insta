@@ -18,3 +18,9 @@
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
+.tabs li:not(.active) a {
+  color: #888;
+}
+.tabs li:not(.active) a:hover {
+  color: #000;
+}
