@@ -18,8 +18,13 @@
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
+.tabs dd.active a, .tabs .tab-title.active a {
+  background-color: #e1e1e1;
+  color: #222;
+}
 .tabs li:not(.active) a {
-  color: #888;
+  color: #ccc;
+  background: #fff;
 }
 .tabs li:not(.active) a:hover {
   color: #000;

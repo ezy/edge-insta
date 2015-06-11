@@ -8,7 +8,7 @@ app.controller('InstagramCtrl', ['$scope', 'Instagram',
 		};
 
 		$scope.example2 = {
-			hash: 'edgekingsland'
+			hash: 'liturgydrawings'
 		};
 
 		var instagramSuccess = function(scope, res) {
