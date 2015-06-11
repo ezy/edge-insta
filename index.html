@@ -10,26 +10,29 @@
 </head>
 
 <body ng-app="edgeKingsland">
-  <div class="container">
-    <div class="row">
-      <div class="large-12 columns v-center">
-        <h1>Litergy machine</h1>
-        <p class="lead">Lorem ipsum something something normal time instructions and positioning</p>
+  <div class="titles">
+    <div class="container">
+      <div class="row">
+        <div class="large-12 columns v-center">
+          <h1>Litergy machine</h1>
+          <p class="lead">Lorem ipsum something something normal time instructions and positioning</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="container" ng-controller="InstagramCtrl">
     <div class="row">
       <ul class="tabs" data-tab>
-        <li class="litergy active"><a href="#{{example1.hash}}">#{{example1.hash}}</a></li>
-        <li class="feedback"><a href="#{{example2.hash}}">#{{example2.hash}}</a></li>
+        <li class="tab-title active"><a href="#panel1">#{{example1.hash}}</a></li>
+        <li class="tab-title"><a href="#panel2">#{{example2.hash}}</a></li>
       </ul>
+      <hr>
       <div class="tabs-content">
-        <div class="content active" id="#{{example1.hash}}">
-          <ul class="clearing-thumbs small-block-grid-4" data-clearing>
-            <li ng-repeat="item in example1.items">
+        <div class="content active" id="panel1">
+          <ul class="medium-block-grid-4 small-block-grid-1">
+            <li class="instagram-item" ng-repeat="item in example1.items">
               <a ng-href="{{item.link}}">
-                <img ng-src="{{ item.images.low_resolution.url }}">
+                <img ng-src="{{ item.images.low_resolution.url }}" src="" alt="">
               </a>
             </li>
           </ul>
@@ -38,17 +41,17 @@
             <br/>{{example1.error}}.
           </div>
         </div>
-        <div class="content" id="#{{example2.hash}}">
-          <ul class="clearing-thumbs small-block-grid-4" data-clearing>
-            <li ng-repeat="item in example2.items">
+        <div class="content" id="panel2">
+          <ul class="medium-block-grid-4 small-block-grid-1">
+            <li class="instagram-item" ng-repeat="item in example2.items">
               <a ng-href="{{item.link}}">
-                <img ng-src="{{ item.images.low_resolution.url }}">
+                <img ng-src="{{ item.images.low_resolution.url }}" src="" alt="">
               </a>
             </li>
           </ul>
           <div ng-show="example2.error" class="alert alert-danger">
             <strong>Warning!</strong>
-            <br/>{{example1.error}}.
+            <br/>{{example2.error}}.
           </div>
         </div>
       </div>
